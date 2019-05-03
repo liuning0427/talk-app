@@ -20,7 +20,7 @@
     .footer{
         position: fixed;
         bottom:0;
-        background: #00a801;
+        background: #80beaf;
         height:1rem;
         width: 100%;
         display: flex;
@@ -30,5 +30,7 @@
         font-size:0.3rem;
         text-align: center;
         line-height: 1rem;
+        border:1.5px solid;
+        border-color:transparent #ccc transparent transparent;
     }
 </style>

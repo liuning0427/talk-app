@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import One from '@/views/One.vue'
+import Xiaoxi from '@/views/Xiaoxi.vue'
+import People from '@/views/People.vue'
+import Txt from '@/views/Txt.vue'
 
 Vue.use(Router)
 
@@ -10,7 +12,13 @@ export default new Router({
   routes: [
     {
       path:'/',
-      component: One
+      component: Xiaoxi
+    },{
+      path:'/people',
+      component: People
+    },{
+      path:'/txt',
+      component: Txt
     }
   ]
 })
