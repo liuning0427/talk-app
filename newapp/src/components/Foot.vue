@@ -2,9 +2,15 @@
     <div>
         <div>
             <ul class="footer">
-                <li>消息</li>
-                <li>联系人</li>
-                <li>记事本</li>
+                <li>
+                    <router-link to="/">消息</router-link>
+                </li>
+                <li>
+                    <router-link to="/people">联系人</router-link>
+                </li>
+                <li>
+                    <router-link to="/txt">记事本</router-link>
+                </li>
             </ul>
         </div>
     </div>

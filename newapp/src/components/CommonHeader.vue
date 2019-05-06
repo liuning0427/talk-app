@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="header">
         <div>
-            <h1>哈哈</h1>
+            <span>消息</span>
         </div>
     </div>
 </template>
@@ -13,7 +13,8 @@
 </script>
 
 <style scoped>
-    h1{
-        color:#123456;
+    .header{
+        height: 1rem;
+        background:#80beaf;
     }
 </style>
