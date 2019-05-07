@@ -1,8 +1,6 @@
 <template>
-    <div class="header">
-        <div>
-            <span>消息</span>
-        </div>
+    <div>
+        
     </div>
 </template>
 
@@ -13,8 +11,5 @@
 </script>
 
 <style scoped>
-    .header{
-        height: 1rem;
-        background:#80beaf;
-    }
+    
 </style>

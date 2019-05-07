@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <common-header></common-header>
     <router-view></router-view>
     <foot></foot>
   </div>
@@ -11,7 +10,6 @@ import CommonHeader from '@/components/CommonHeader.vue'
 import Foot from '@/components/Foot.vue'
 export default {
   components:{
-    CommonHeader,
     Foot
   },
   // data() {

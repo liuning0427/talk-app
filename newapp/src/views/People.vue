@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h1>呵呵</h1>
+        <div class="xiaoxi">
+            <p>在此显示您的联系人</p>
+        </div>
     </div>
 </template>
 
@@ -10,6 +12,14 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+    p{
+        font-size:0.3rem;
+        color:#999;
+    }
+    .xiaoxi{
+        text-align:center;
+        background:#f2f2f2;
+        height:100%;
+    }
 </style>
