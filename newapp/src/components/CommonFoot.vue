@@ -2,15 +2,15 @@
     <div>
         <div>
             <ul class="footer">
-                <li>
-                    <router-link to="/">消息</router-link>
+                <li v-for="(obj,index) in menu" :key="index">
+                    <router-link :to="obj.path">{{obj.name}}</router-link>
                 </li>
-                <li>
+                <!-- <li>
                     <router-link to="/people">联系人</router-link>
                 </li>
                 <li>
                     <router-link to="/txt">记事本</router-link>
-                </li>
+                </li> -->
             </ul>
         </div>
     </div>
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        
+        props:['menu','seachMenu']
     }
 </script>
 

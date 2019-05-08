@@ -1,33 +1,39 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <foot></foot>
+    <common-foot :menu="menu" :seachMenu="seachMenu"></common-foot>
   </div>
 </template>
 
 <script>
 import CommonHeader from '@/components/CommonHeader.vue'
-import Foot from '@/components/Foot.vue'
+import CommonFoot from '@/components/CommonFoot.vue'
 export default {
   components:{
-    Foot
+    CommonFoot
   },
-  // data() {
-  //   return {
-  //     list:[
-  //       {
-  //       name:'消息',
-  //       path:'/'
-  //     },{
-  //       name:'联系人',
-  //       path:'/people'
-  //     },{
-  //       name:'记事本',
-  //       path:'/txt'
-  //     }
-  //     ]
-  //   }
-  // }
+  data() {
+    return {
+      menu:[
+        {
+          name:'消息',
+          path:'/'
+        },{
+          name:'联系人',
+          path:'/people'
+        },{
+          name:'我的',
+          path:'/txt'
+        }
+      ],
+      seachMenu:[
+        {
+          name:'消息',
+          path:'/'
+        }
+      ]
+    }
+  },
 }
 </script>
 
