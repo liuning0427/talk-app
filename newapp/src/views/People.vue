@@ -34,7 +34,7 @@
     .people{
         height: 0.5rem;
         width:100%;
-        margin-top:0.3rem;
+        margin-top:0.2rem;
         border:1px solid #f2f2f2;
         background: #ffffff;
         outline: none; 

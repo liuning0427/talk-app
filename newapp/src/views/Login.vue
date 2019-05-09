@@ -36,12 +36,13 @@
         left:0;
         right:0;
         background-image: url('../assets/微信图片_20190509100312.jpg');
-        background-size:100%;
+        background-size:100% 100%;
     }
     .login-box{
         width:5.5rem;
         height:2rem;
-        border:1px solid #ccc;
+        border:2px solid rgba(225,225,224,0.7);
+        border-radius: 10px;
         color:#fffff9;
         padding:0 0.2rem;
         position: relative;

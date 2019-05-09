@@ -33,7 +33,7 @@
         text-align: center;
     }
     .header-span{
-        font-size:0.4rem;
+        font-size:0.35rem;
         color:#fff;
         line-height: 1rem;
         margin-top:0;

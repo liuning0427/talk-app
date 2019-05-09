@@ -2,7 +2,7 @@
     <div>
         <div>
             <ul class="footer">
-                <li v-for="(obj,index) in menu" :key="index">
+                <li v-for="(obj,index) in menu" :key="index" :class="{xx:isColor}" @click="isColor">
                     <router-link :to="obj.path">{{obj.name}}</router-link>
                 </li>
                 <!-- <li>
@@ -18,7 +18,17 @@
 
 <script>
     export default {
-        props:['menu','seachMenu']
+        props:['menu','seachMenu'],
+        data() {
+            return {
+                isColor:false
+            }
+        },
+        methods: {
+            isColor(){
+                this.isColor = !this.isColor;
+            }
+        },
     }
 </script>
 
@@ -26,17 +36,20 @@
     .footer{
         position: fixed;
         bottom:0;
-        background: #80beaf;
-        height:1rem;
+        background: #ffffff;
+        height:0.8rem;
         width: 100%;
         display: flex;
+        position:fixed;
     }
     .footer li{
         flex:1;
-        font-size:0.3rem;
+        font-size:0.25rem;
         text-align: center;
-        line-height: 1rem;
-        border:1.5px solid;
-        border-color:transparent #ccc transparent transparent;
+        line-height: 0.8rem;
+        border-top:1px solid rgba(225,225,220,1);
+    }
+    .xx{
+        background:#ff0;
     }
 </style>
