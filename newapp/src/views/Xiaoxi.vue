@@ -1,13 +1,6 @@
 <template>
-    <div>
-       <div class="header">
-            <div class="header-img">
-                <img src="@/assets/logo.png" class="img">
-            </div>
-            <div class="header-span">
-                <span>消息</span>
-            </div>
-        </div>
+    <div class="head">
+       
     </div>
 </template>
 
@@ -18,22 +11,13 @@
 </script>
 
 <style scoped>
-    .header{
-        background:#80beaf;
-        height:1rem;
-        text-align: center;
-    }
-    .header-span{
-        font-size:0.4rem;
-        color:#fff;
-        line-height: 1rem;
-        margin-top:0;
-    }
-    .header .img{
-        position:absolute;
-        top:0.15rem;
-        left:0.2rem;
-        width: 0.7rem;
-        height: 0.7rem;
-    }
+    /* .head{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        background: #fffff9;
+    } */
+    
 </style>

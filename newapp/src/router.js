@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Xiaoxi from '@/views/Xiaoxi.vue'
 import People from '@/views/People.vue'
 import Txt from '@/views/Txt.vue'
+import Login from '@/views/Login.vue'
 
 Vue.use(Router)
 
@@ -19,6 +20,9 @@ export default new Router({
     },{
       path:'/txt',
       component: Txt
+    },{
+      path:'/login',
+      component: Login
     }
   ]
 })
