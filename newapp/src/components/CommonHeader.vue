@@ -5,7 +5,7 @@
                 <img src="@/assets/logo.png" class="img" @click="fn()">
             </div>
             <div class="header-span">
-                <span>消息</span>
+                <span >{{seachMenu.name}}</span>
             </div>
         </div>
     </div>
@@ -13,6 +13,7 @@
 
 <script>
     export default {
+        props:['seachMenu'],
         data() {
             return {
                 

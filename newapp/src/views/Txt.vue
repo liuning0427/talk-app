@@ -1,7 +1,10 @@
 <template>
     <div>
         <div>
-            <h1>嘎嘎</h1>
+            <div class="head">
+                <img src="../assets/logo.png" alt="">
+                
+            </div>
         </div>
     </div>
 </template>
@@ -12,6 +15,6 @@
     }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>

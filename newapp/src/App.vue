@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <common-header></common-header>
+    <common-header :seachMenu="seachMenu"></common-header>
     <router-view></router-view>
-    <common-foot :menu="menu" :seachMenu="seachMenu"></common-foot>
+    <common-foot :menu="menu" :seachMenu="seachMenu" @change="fn"></common-foot>
   </div>
 </template>
 
@@ -13,6 +13,12 @@ export default {
   components:{
     CommonFoot,
     CommonHeader
+  },
+  methods: {
+    fn(index){
+      // console.log(index);
+      this.seachMenu = this.menu[index];
+    }
   },
   data() {
     return {
@@ -31,7 +37,7 @@ export default {
       seachMenu:[
         {
           name:'消息',
-          path:'/'
+          path:'/xiaoxi'
         }
       ]
     }
