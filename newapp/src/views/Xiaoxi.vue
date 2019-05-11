@@ -25,7 +25,7 @@
 <style scoped>
     .seach{
         height: 0.5rem;
-        width:100%;
+        width:90%;
         margin-top:0.2rem;
         border:1px solid #f2f2f2;
         background: #ffffff;

@@ -50,8 +50,8 @@
     .xx{
         background:#ff0;
     }
-    /* li a.router-link-active{
+    .footer a.router-link-active{
         color:#ccc;
         outline:none;
-    } */
+    }
 </style>

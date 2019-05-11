@@ -2,11 +2,11 @@
     <div class="login">
         <div class="login-box">
             <form action="">
-                <label for="xx">UserName</label>
+                <label for="xx">&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;&nbsp;&nbsp;&nbsp;</label>
                 <input type="text">
                 <br>
-                <label for="xx">PassWord</label>
-                <input type="text">
+                <label for="xx">password</label>
+                <input type="password">
                 <img src="../assets/进入.png" @click="getin()">
             </form>
         </div>
@@ -49,6 +49,7 @@
         margin:4rem auto;
     }
     input{
+        width:2rem;
         outline: none;
         margin-left:0.1rem;
         border:none;
