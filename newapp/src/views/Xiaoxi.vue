@@ -18,7 +18,9 @@
 
 <script>
     export default {
-        
+        created() {
+            this.$store.state.show = true
+        }
     }
 </script>
 

@@ -21,7 +21,7 @@
         },
         methods: {
             fn(){
-                this.$router.push('/login')
+                this.$router.push('/txt')
             }
         },
     }

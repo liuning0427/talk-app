@@ -12,7 +12,7 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path:'/',
+      path:'/xiaoxi',
       component: Xiaoxi
     },{
       path:'/people',
@@ -21,7 +21,7 @@ export default new Router({
       path:'/txt',
       component: Txt
     },{
-      path:'/login',
+      path:'/',
       component: Login
     }
   ]

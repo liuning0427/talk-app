@@ -22,8 +22,11 @@
         },
         methods: {
             getin(){
-                this.$router.push('/')
+                this.$router.push('/xiaoxi')
             }
+        },
+        created() {
+            this.$store.state.show = false
         },
     }
 </script>
@@ -46,7 +49,7 @@
         color:#fffff9;
         padding:0 0.2rem;
         position: relative;
-        margin:4rem auto;
+        margin:70% auto;
     }
     input{
         width:2rem;

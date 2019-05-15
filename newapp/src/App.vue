@@ -2,7 +2,7 @@
   <div id="app">
     <common-header :seachMenu="seachMenu"></common-header>
     <router-view></router-view>
-    <common-foot :menu="menu" :seachMenu="seachMenu" @change="fn"></common-foot>
+    <common-foot :menu="menu" :seachMenu="seachMenu" @change="fn" v-if="$store.state.show"></common-foot>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import CommonFoot from '@/components/CommonFoot.vue'
 export default {
   components:{
     CommonFoot,
-    CommonHeader
+    CommonHeader,
   },
   methods: {
     fn(index){
@@ -25,7 +25,7 @@ export default {
       menu:[
         {
           name:'消息',
-          path:'/'
+          path:'/xiaoxi'
         },{
           name:'联系人',
           path:'/people'
@@ -39,8 +39,17 @@ export default {
           name:'消息',
           path:'/xiaoxi'
         }
-      ]
+      ],
+      headerShow: true
     }
+  },
+  
+  created() {
+    this.menu.forEach((obj,index) => {
+      if(obj.path == this.$route.path){
+        this.seachMenu = obj;
+      }
+    })
   },
 }
 </script>
