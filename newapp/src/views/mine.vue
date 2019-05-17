@@ -15,6 +15,10 @@
                     <img src="../assets/pic/music.png" class="img" >
                     <span class="body-span">我的音乐</span>
                 </div>
+                <div @click="getfor()" class="body-div">
+                    <img src="../assets/pic/book.png" class="img">
+                    <span class="body-span">我的图书</span>
+                </div>
             </div>
         </div>
     </div>
@@ -37,6 +41,9 @@
             },
             getto(){
                 this.$router.push('/mine/music')
+            },
+            getfor(){
+                this.$router.push('mine/mybook');
             },
             fn(){
                 this.show=!this.show

@@ -5,7 +5,7 @@
         </div>
        <div class="head-txt">
            <div class="head-img">
-                <img src="../assets/pic/logo.png">  
+                <img src="../assets/pic/mine.png">  
            </div>
            <div class="content">
                 <h3>联系人</h3>

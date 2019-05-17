@@ -2,7 +2,7 @@
     <div>
         <div class="header">
             <div class="header-img">
-                <img src="@/assets/pic/logo.png" class="img"/>
+                <img src="@/assets/pic/mine.png" class="img"/>
             </div>
             <div class="header-span">
                 <span >{{seachMenu.name}}</span>
