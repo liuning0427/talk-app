@@ -7,14 +7,14 @@
             </div>
             <span class="mypic">我的图书</span>
         </div>
-        <h4>猜你喜欢</h4>
+        <h4>|猜你喜欢|</h4>
         <div class="body">
             <swipe class="my-swipe">
                 <swipe-item class="slide1"></swipe-item>
                 <swipe-item class="slide2"></swipe-item>
                 <swipe-item class="slide3"></swipe-item>
             </swipe>
-            <h5>我最近阅读的图书</h5>
+            <h5>|我最近阅读的图书|</h5>
             <div class="book">
                 <div class="left">
                     <img src="../assets/pic/9.jpg"/>
@@ -76,8 +76,8 @@ require('vue-swipe/dist/vue-swipe.css');
     }
     .mypic{
         color:#fff;
-        font-size:0.4rem;
-        flex:1.75;
+        font-size:0.35rem;
+        flex:1.5;
         line-height:1rem;
     }
     .my-swipe {

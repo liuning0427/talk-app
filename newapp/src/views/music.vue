@@ -91,8 +91,8 @@ import Aplayer from 'vue-aplayer'
     }
     .mypic{
         color:#fff;
-        font-size:0.4rem;
-        flex:1.75;
+        font-size:0.35rem;
+        flex:1.5;
         line-height:1rem;
     }
     .body{

@@ -5,10 +5,13 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    show:true
+    show:true,
+    photoData:[],
   },
   mutations: {
-
+    addPhoto(state,data){
+      state.photoData = data;
+    }
   },
   actions: {
 

@@ -9,7 +9,7 @@
         </div>
         <div class="body">
             <div class="img">
-            <img :src="obj.src" v-for="(obj,index) in photoList" :key="index">
+            <img :src="obj.src" v-for="(obj,index) in $store.state.photoData" :key="index" @click="getin(index)">
         </div>
         <div class="loading"  v-show="isLoading">
             <img src="../assets/pic/loading.gif">
@@ -24,21 +24,23 @@ import axios from 'axios'
         created() {
             axios.get('/data/photodata.json')
             .then((result)=>{
-                this.photoList = result.data.photoData;
-                // console.log(result);
+                // this.photoList = result.data.photoData;
+                this.$store.commit('addPhoto',result.data.photoData),
                 this.isLoading=false
             })
             this.$store.state.show = false;
         },
         data() {
             return {
-                photoList:[],
                 isLoading:true
             }
         },
         methods: {
             getTo(){
                 this.$router.push('/mine');
+            },
+            getin(index){
+                this.$router.push('/mine/myphoto/photo/'+index);
             }
         },
     }
@@ -94,8 +96,8 @@ import axios from 'axios'
     }
     .mypic{
         color:#fff;
-        font-size:0.4rem;
-        flex:1.75;
+        font-size:0.35rem;
+        flex:1.5;
         line-height:1rem;
     }
 </style>
