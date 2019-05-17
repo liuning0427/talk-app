@@ -2,7 +2,7 @@
     <div>
         <div class="header">
             <div class="header-img">
-                <img src="@/assets/logo.png" class="img" @click="fn()">
+                <img src="@/assets/pic/logo.png" class="img"/>
             </div>
             <div class="header-span">
                 <span >{{seachMenu.name}}</span>
@@ -11,18 +11,23 @@
     </div>
 </template>
 
-<script>
+<script type="text/babel">
+
     export default {
         props:['seachMenu'],
+        
         data() {
             return {
                 
             }
         },
         methods: {
-            fn(){
-                this.$router.push('/txt')
-            }
+           
+        },
+        created() {
+            this.seachMenu.forEach((obj,index)=>{
+                this.seachMenu.name = obj.name; //一跳转进来就显示name
+            })
         },
     }
 </script>
@@ -32,6 +37,10 @@
         background:#80beaf;
         height:1rem;
         text-align: center;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
     }
     .header-span{
         font-size:0.35rem;

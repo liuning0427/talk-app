@@ -5,12 +5,6 @@
                 <li v-for="(obj,index) in menu" :key="index" @click="$emit('change',index)">
                     <router-link :to="obj.path">{{obj.name}}</router-link>
                 </li>
-                <!-- <li>
-                    <router-link to="/people">联系人</router-link>
-                </li>
-                <li>
-                    <router-link to="/txt">记事本</router-link>
-                </li> -->
             </ul>
         </div>
     </div>
@@ -35,7 +29,7 @@
         position: fixed;
         bottom:0;
         background: #ffffff;
-        height:0.8rem;
+        height:1rem;
         width: 100%;
         display: flex;
         position:fixed;
@@ -44,11 +38,8 @@
         flex:1;
         font-size:0.25rem;
         text-align: center;
-        line-height: 0.8rem;
+        line-height: 1rem;
         border-top:1px solid rgba(225,225,220,1);
-    }
-    .xx{
-        background:#ff0;
     }
     .footer a.router-link-active{
         color:#ccc;

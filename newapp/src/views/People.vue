@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="header">
         <div class="xiaoxi">
             <input type="text" placeholder="搜索您的联系人" class="people">
             <span>在此显示您的联系人</span>
@@ -24,11 +24,6 @@
     }
     .xiaoxi{
         text-align:center;
-        /* position:absolute;
-        top:0;
-        bottom:0;
-        left:0;
-        right:0; */
         padding:0 0.3rem;
     }
     .people{
@@ -39,5 +34,8 @@
         background: #ffffff;
         outline: none; 
         text-align:center;
+    }
+    .header{
+        margin-top:1rem;
     }
 </style>

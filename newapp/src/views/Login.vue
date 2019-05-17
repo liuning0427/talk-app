@@ -2,12 +2,12 @@
     <div class="login">
         <div class="login-box">
             <form action="">
-                <label for="xx">&nbsp;&nbsp;&nbsp;&nbsp;user&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <label for="xx">username</label>
                 <input type="text">
                 <br>
-                <label for="xx">password</label>
+                <label for="xx">password&nbsp;</label>
                 <input type="password">
-                <img src="../assets/进入.png" @click="getin()">
+                <img src="../assets/pic/进入.png" @click="getin()">
             </form>
         </div>
     </div>
@@ -38,7 +38,7 @@
         bottom:0;
         left:0;
         right:0;
-        background-image: url('../assets/微信图片_20190509100312.jpg');
+        background-image: url('../assets/pic/微信图片_20190509100312.jpg');
         background-size:100% 100%;
     }
     .login-box{

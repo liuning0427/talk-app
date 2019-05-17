@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <common-header :seachMenu="seachMenu"></common-header>
+    <common-header :seachMenu="seachMenu" v-if="$store.state.show"></common-header>
     <router-view></router-view>
     <common-foot :menu="menu" :seachMenu="seachMenu" @change="fn" v-if="$store.state.show"></common-foot>
   </div>
@@ -31,7 +31,7 @@ export default {
           path:'/people'
         },{
           name:'我的',
-          path:'/txt'
+          path:'/mine'
         }
       ],
       seachMenu:[
@@ -55,5 +55,5 @@ export default {
 </script>
 
 <style>
-
+  
 </style>

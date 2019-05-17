@@ -5,7 +5,7 @@
         </div>
        <div class="head-txt">
            <div class="head-img">
-                <img src="../assets/logo.png">  
+                <img src="../assets/pic/logo.png">  
            </div>
            <div class="content">
                 <h3>联系人</h3>
@@ -19,7 +19,7 @@
 <script>
     export default {
         created() {
-            this.$store.state.show = true
+            this.$store.state.show = true;
         }
     }
 </script>
@@ -37,6 +37,7 @@
     }
     .head{
         padding:0 0.3rem;
+        margin-top:1rem;
     }
     .head-input{
         width:100%;
@@ -61,5 +62,4 @@
         flex:4;
         margin-left:0.2rem;
     }
-
 </style>
