@@ -5,7 +5,7 @@
                 <img src="@/assets/pic/mine.png" class="img"/>
             </div>
             <div class="header-span">
-                <span >{{seachMenu.name}}</span>
+                <span>{{seachMenu.name}}</span>
             </div>
         </div>
     </div>
