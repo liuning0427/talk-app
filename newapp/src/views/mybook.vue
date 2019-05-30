@@ -7,22 +7,24 @@
             </div>
             <span class="mypic">我的图书</span>
         </div>
-        <h4>|猜你喜欢|</h4>
+        <h4>猜你喜欢</h4>
         <div class="body">
             <swipe class="my-swipe">
                 <swipe-item class="slide1"></swipe-item>
                 <swipe-item class="slide2"></swipe-item>
                 <swipe-item class="slide3"></swipe-item>
             </swipe>
-            <h5>|我最近阅读的图书|</h5>
-            <div class="book">
+            <h5>我的书架</h5>
+            <div class="book" v-for="(obj,index) in bookList" :key="index">
                 <div class="left">
-                    <img src="../assets/pic/9.jpg"/>
+                    <img :src="obj.imageSrc"/>
                 </div>
                 <div class="right">
-                    <h3>《满足》</h3>
-                    <p>作者</p>
-                    <p>年份</p>
+                    <div class="h3">
+                        <h3>{{obj.title}}</h3>
+                    </div>
+                    <p>{{obj.author}}</p>
+                    <p>{{obj.year}}</p>
                 </div>
             </div>
         </div>
@@ -31,13 +33,24 @@
 
 <script>
 import { Swipe, SwipeItem } from 'vue-swipe';
+import axios from 'axios';
 require('vue-swipe/dist/vue-swipe.css');
     export default {
+        data() {
+            return {
+                bookList:[]
+            }
+        },
         components:{
             Swipe,
             SwipeItem
         },
         created() {
+            axios.get(" https://www.easy-mock.com/mock/5cefdbee525314372dffa2dd/book-list/book-list")
+            .then((result) => {
+                console.log(result);
+                this.bookList = result.data.bookList
+            })
             this.$store.state.show = false;
         },
         methods: {
@@ -55,6 +68,7 @@ require('vue-swipe/dist/vue-swipe.css');
         background: #80beaf;
         margin-top:0;
         position:fixed;
+        z-index: 1;
         top:0;
         right:0;
         left:0;
@@ -130,5 +144,15 @@ require('vue-swipe/dist/vue-swipe.css');
     }
     .right{
         flex:2;
+    }
+    p,h3{
+        margin:15px 5px;
+    }
+    .h3{
+        width:180px;
+        height:50px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 </style>
