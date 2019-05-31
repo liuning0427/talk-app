@@ -8,6 +8,7 @@ import MyPhoto from '@/views/myphoto.vue'
 import Music from '@/views/music.vue'
 import MyBook from '@/views/mybook.vue'
 import Photo from '@/views/photo.vue'
+import Talk from '@/views/talk.vue'
 
 Vue.use(Router)
 
@@ -39,6 +40,9 @@ export default new Router({
     },{
       path:'/mine/myphoto/photo/:index',
       component: Photo
+    },{
+      path:'/xiaoxi/talk',
+      component:Talk
     }
   ]
 })

@@ -27,6 +27,9 @@
                     <p>{{obj.year}}</p>
                 </div>
             </div>
+            <div class="loading"  v-show="isLoading">
+                <img src="../assets/pic/loading.gif">
+            </div>
         </div>
     </div>
 </template>
@@ -38,7 +41,8 @@ require('vue-swipe/dist/vue-swipe.css');
     export default {
         data() {
             return {
-                bookList:[]
+                bookList:[],
+                isLoading:true
             }
         },
         components:{
@@ -49,7 +53,8 @@ require('vue-swipe/dist/vue-swipe.css');
             axios.get(" https://www.easy-mock.com/mock/5cefdbee525314372dffa2dd/book-list/book-list")
             .then((result) => {
                 console.log(result);
-                this.bookList = result.data.bookList
+                this.bookList = result.data.bookList,
+                this.isLoading=false
             })
             this.$store.state.show = false;
         },
@@ -154,5 +159,18 @@ require('vue-swipe/dist/vue-swipe.css');
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+    }
+    .loading{
+        background: rgba(0,0,0,0.3);
+        width:0.5rem;
+        height:0.5rem;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .loading img{
+        width:0.5rem;
+        height:0.5rem;
     }
 </style>

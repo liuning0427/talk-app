@@ -3,7 +3,7 @@
         <div class="head-input">
             <input type="text" placeholder="搜索聊天记录" class="seach">
         </div>
-       <div class="head-txt">
+       <div class="head-txt" @click="getIn()">
            <div class="head-img">
                 <img src="../assets/pic/mine.png">  
            </div>
@@ -20,7 +20,12 @@
     export default {
         created() {
             this.$store.state.show = true;
-        }
+        },
+        methods: {
+            getIn(){
+                this.$router.push('/xiaoxi/talk');
+            }
+        },
     }
 </script>
 
