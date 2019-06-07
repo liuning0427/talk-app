@@ -3,11 +3,13 @@
         <div class="login-box">
             <form action="">
                 <label for="xx">username</label>
-                <input type="text">
+                <input type="text" class="input">
                 <br>
                 <label for="xx">password&nbsp;</label>
-                <input type="password">
-                <img src="../assets/pic/进入.png" @click="getin()">
+                <input type="password" class="input">
+                <!-- <img src="../assets/pic/进入.png" @click="getin()"> -->
+                <input type="button" value="注册" class="btn" @click="getin()">
+                <input type="button" value="登录" class="btn" @click="getin()">
             </form>
         </div>
     </div>
@@ -51,11 +53,22 @@
         position: relative;
         margin:70% auto;
     }
-    input{
+    .input{
         width:2rem;
         outline: none;
         margin-left:0.1rem;
         border:none;
+    }
+    .btn{
+        width:1rem;
+        height:0.5rem;
+        margin-left:0.5rem;
+        margin-top:0.1rem;
+        border:none;
+        color:#999;
+        background: #f1f1f1;
+        border-radius: 10px;
+        outline:none;
     }
     form{
         position: absolute;
