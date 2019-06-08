@@ -7,7 +7,6 @@
                 <br>
                 <label for="xx">password&nbsp;</label>
                 <input type="password" class="input">
-                <!-- <img src="../assets/pic/进入.png" @click="getin()"> -->
                 <input type="button" value="注册" class="btn" @click="getin()">
                 <input type="button" value="登录" class="btn" @click="getin()">
             </form>
