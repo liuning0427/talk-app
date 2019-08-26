@@ -11,7 +11,6 @@
                 <h3>联系人</h3>
                 <span>最近聊天记录</span>
            </div>
-           
        </div>
     </div>
 </template>
