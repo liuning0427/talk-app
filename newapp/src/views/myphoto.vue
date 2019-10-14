@@ -22,7 +22,7 @@
 import axios from 'axios'
     export default {
         created() {
-            axios.get('/data/photodata.json')
+            axios.post('/data/photodata.json')
             .then((result)=>{
                 // this.photoList = result.data.photoData;
                 this.$store.commit('addPhoto',result.data.photoData),
